@@ -7,26 +7,23 @@ from __module import main
 
 print("ATM SIMULATION - Banko De UNO")
 
-verify_counter = 0
-
-while True:
-    if verify_counter == 3:
+for v in range(3):
+    if v == 3:
         print("Your card has been confiscated due to entering incorrect pin three times...")
         exit()
 
     try:
         pin = int(input('Enter PIN: '))
     except:
-        verify_counter += 1
+        v += 1
         print("Incorrect Pin!\n")
     else:
         if len(str(pin)) == 6:
             choose_tran()
             break
         else:
-            verify_counter += 1
+            v += 1
             print("Incorrect Pin!\n")
-
 
 
 main(input_choice())

@@ -68,7 +68,7 @@ def main(choice):
     
     elif choice == 4: # BALANCE INQUIRY
         print(f"\nSavings Balance: {user_balance['savings']}")
-        print(f"Current Balance: {user_balance['current']}")
+        print(f"Current Balance: {user_balance['current']}\n")
         run_again()
 
     else:

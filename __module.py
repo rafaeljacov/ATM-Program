@@ -73,6 +73,7 @@ def main(choice):
 
     else:
         print("Thank you for banking with us. Please remove your card...")
+        exit()
 
 
 
